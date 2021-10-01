@@ -1,7 +1,6 @@
 ###### alias ######
 ###### alias ######
 ###### alias ######
-
 alias zshconfig="vim ~/.zshrc"
 alias sourcezsh="source ~/.zshrc"
 
@@ -17,9 +16,14 @@ alias tk="tmux kill-session -t"
 alias tka="tmux kill-serve"
 
 alias cm="gcc -Wall -g -o"
+alias cppm="g++ -o"
 
 alias sshme="ssh-add ~/.ssh/id_rsa.owner"
 alias sshcm="ssh-add ~/.ssh/id_rsa"
+
+alias cdgo="cd $GOPATH"
+alias cdgoproject="cd $GOPATH/src/gitee.com/superwhys"
+alias cdcm="cd ~/CloudMall"
 
 ###### function ######
 ###### function ######
@@ -109,7 +113,7 @@ ZSH_THEME="af-magic"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
