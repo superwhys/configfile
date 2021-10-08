@@ -25,7 +25,6 @@ set helplang=cn
 set softtabstop=4
 set shiftwidth=4
 set cursorline
-set nobackup
 
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]
@@ -92,11 +91,11 @@ source $VIMRUNTIME/defaults.vim
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
-else
-  set backup		" keep a backup file (restore to previous version)
-  if has('persistent_undo')
-    set undofile	" keep an undo file (undo changes after closing)
-  endif
+"else
+"  set backup		" keep a backup file (restore to previous version)
+" if has('persistent_undo')
+"    set undofile	" keep an undo file (undo changes after closing)
+"  endif
 endif
 
 if &t_Co > 2 || has("gui_running")

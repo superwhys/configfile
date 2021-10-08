@@ -3,7 +3,6 @@
 ###### alias ######
 alias zshconfig="vim ~/.zshrc"
 alias sourcezsh="source ~/.zshrc"
-
 alias testingconsul="prodconsul --config $HOME/.prodconsul/testing.ini"
 alias consuld="nohup consul agent -dev > /dev/null &"
 alias tc="prodconsul --config ~/.prodconsul/testing.ini --privateKey ~/.ssh/id_rsa"
@@ -24,6 +23,15 @@ alias sshcm="ssh-add ~/.ssh/id_rsa"
 alias cdgo="cd $GOPATH"
 alias cdgoproject="cd $GOPATH/src/gitee.com/superwhys"
 alias cdcm="cd ~/CloudMall"
+
+###### sql ######
+###### sql ######
+alias mysqlup="brew services start mysql"
+alias mysqldown="brew services stop mysql"
+alias mongoup="brew services start mongodb-community@4.4"
+alias mongodown="brew services stop mongodb-community@4.4"
+
+
 
 ###### function ######
 ###### function ######
@@ -61,11 +69,11 @@ function gitconfigcm() {
 ###### export ######
 ###### export ######
 
-export GIT_PATH=/usr/local/git
-export PATH=$PATH:~/.consul:~/.prodconsul:$GIT_PATH/bin
-export GOPATH=/Users/yong/Program/Go/GoData
-
-
+#export GIT_PATH=/usr/local/git
+#export PATH=$PATH:~/.consul:~/.prodconsul:$GIT_PATH/bin:/usr/local/mysql/bin
+#export GOPATH=/Users/yong/Program/Go/GoData
+#export PATH="/opt/homebrew/opt/mongodb-community@4.4/bin:$PATH"
+#export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles
 
 
 # If you come from bash you might have to change your $PATH.
