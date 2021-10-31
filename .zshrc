@@ -1,6 +1,8 @@
 ###### alias ######
 ###### alias ######
 ###### alias ######
+alias LS="ls"
+
 alias zshconfig="vim ~/.zshrc"
 alias sourcezsh="source ~/.zshrc"
 alias testingconsul="prodconsul --config $HOME/.prodconsul/testing.ini"
