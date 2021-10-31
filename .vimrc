@@ -24,7 +24,6 @@ set langmenu=zh_CN.UTF-8
 set helplang=cn
 set softtabstop=4
 set shiftwidth=4
-set cursorline
 
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]
