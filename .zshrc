@@ -65,6 +65,16 @@ function gitconfigcm() {
 	gitconfiginfo
 }
 
+function kafkastart() {
+	brew services start zookeeper
+	brew services start kafka
+}
+
+function kafkastop() {
+	brew services stop zookeeper
+	brew services stop kafka
+}
+
 ###### export ######
 ###### export ######
 ###### export ######
