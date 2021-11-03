@@ -23,7 +23,7 @@ alias sshme="ssh-add ~/.ssh/id_rsa.owner"
 alias sshcm="ssh-add ~/.ssh/id_rsa"
 
 alias cdgo="cd $GOPATH"
-alias cdgoproject="cd $GOPATH/src/gitee.com/superwhys"
+alias cdgome="cd $GOPATH/src/github.com/superwhys"
 alias cdcm="cd ~/CloudMall"
 
 ###### sql ######
