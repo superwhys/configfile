@@ -25,6 +25,7 @@ alias sshcm="ssh-add ~/.ssh/id_rsa"
 alias cdgo="cd $GOPATH"
 alias cdgome="cd $GOPATH/src/github.com/superwhys"
 alias cdcm="cd ~/CloudMall"
+alias cdpro="~/Program/GoProject"
 
 ###### sql ######
 ###### sql ######
@@ -75,6 +76,27 @@ function kafkastart() {
 function kafkastop() {
 	brew services stop zookeeper
 	brew services stop kafka
+}
+
+function gowin() {
+	go env -w CGO_ENABLED=0
+	go env -w GOARCH=amd64
+    go env -w GOOS=windows
+	go env GOOS
+}
+
+function golinux() {
+    go env -w CGO_ENABLED=0
+	go env -w GOARCH=amd64
+	go env -w GOOS=linux
+	go env GOOS
+}
+
+function gomac() {
+	go env -w CGO_ENABLED=0
+	go env -w GOARCH=amd64
+	go env -w GOOS=darwin
+	go env GOOS
 }
 
 ###### export ######
